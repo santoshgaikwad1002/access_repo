@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html'%}
+{% block body_block %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>Please SignUp to Write the Exam</h1>
+        <table>
+        <form action="" method="post">
+            <input type="submit" name="" value="SignUp">
+            {{form.as_table}}
+            {% csrf_token %}
+            
+        </form>
+        </table>
+    </div>
+
+</div>
+{% endblock %}
